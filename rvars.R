@@ -3,34 +3,23 @@
 ##Population
 tips=read.csv('tips.csv')
 View(tips)
+dim(tips)
 names(tips)
 #Select A variable 
- #total_bill 
-    #population distribution
-mean(tips$total_bill)
-hist(tips$total_bill)
-abline(v=mean(tips$total_bill), 
-       col='red')
+  #total Bill
 
 #select a sample
 s1=sample(tips$total_bill, 40, replace = T)
-mean(s1)
-hist(s1)
-abline(v=mean(s1), col='blue')
-
-
-#m is a random variable
-
-
 
 ##Lets run a LOOP to repeat the sampling 1000 times
-m=c()
+m=c()   #empty vector
 
 
-for (i in 1:10) {
+for (i in 1:1000) {
   s=sample(tips$total_bill, 40, replace = T)
   m[i]=mean(s)
 }
+m
 
 head(m)
 length(m)
