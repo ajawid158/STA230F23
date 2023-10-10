@@ -33,7 +33,9 @@ qt(0.05, df=n-1, lower.tail = TRUE)   ##this gives the Pr(t<value)=0.975
 #95%CI=[xbar-2.26*s/sqrt(10), xbar-2.26*s/sqrt(10)]
 
 
-qnorm(0.001)
+qnorm(0.001)    # for z-dist
 
-qt(0.05, df=9, lower.tail = TRUE)
+qt(0.05, df=9, lower.tail = TRUE)   #for t-dist
+
+
 
