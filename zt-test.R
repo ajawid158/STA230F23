@@ -35,7 +35,7 @@ qt(0.05, df=n-1, lower.tail = TRUE)   ##this gives the Pr(t<value)=0.975
 
 qnorm(0.001)    # for z-dist
 
-qt(0.05, df=9, lower.tail = TRUE)   #for t-dist
+qt(0.005, df=15, lower.tail = TRUE)   #for t-dist
 
 
 
