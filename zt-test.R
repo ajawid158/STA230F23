@@ -2,11 +2,14 @@
 
 #n=100, xbar=20, sigma=4 CI 95
 #wirte a function that calculates CI
+#df=n-1  n is the sample size
+
 x=seq(-6,6, by=0.01)
-y1=dt(x, df=5)
-y2=dt(x, df=15)
-y3=dt(x, df=30)
-y4=dt(x, df=99)
+y1=dt(x, df=5)   #sample size =6
+
+y2=dt(x, df=15)   #n=16
+y3=dt(x, df=30)   #n=31
+y4=dt(x, df=99)  #n=100
 
 yz=dnorm(x)
 
@@ -30,6 +33,7 @@ qt(0.05, df=n-1, lower.tail = TRUE)   ##this gives the Pr(t<value)=0.975
 #95%CI=[xbar-2.26*s/sqrt(10), xbar-2.26*s/sqrt(10)]
 
 
-qnorm(0.05)
-qt(0.05, df=300, lower.tail = TRUE)
+qnorm(0.001)
+
+qt(0.05, df=9, lower.tail = TRUE)
 
