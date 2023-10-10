@@ -25,3 +25,12 @@ qnorm(0.05)
 
 #95%CI=[phat-1.64*SQRT(p1/n), phat+1.64*SQRT(p1/n)]
 
+
+#chi square distribution 
+x=rchisq(1000
+         , df=8)
+x
+
+plot(density(x))
+
+quantile(x, 0.05)
