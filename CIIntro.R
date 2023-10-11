@@ -16,7 +16,7 @@ quantile(z, 0.005)
 ##CI for population proportion 
 #mean=p, sd=sqrt(pq/n)
 
-qnorm(0.025)
+qnorm(0.05)
 
 #95%CI=[phat-1.96*SQRT(p1/n), phat+1.96*SQRT(p1/n)]
 
