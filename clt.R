@@ -30,19 +30,22 @@ abline(v=mean(x$MT), col='red', lty=3, lwd=3)
 #
 #dev.off()
 
+
+
 #CLT for Sample proportion
+
 
 nSim=10000    #number of repetition
 
 n=100    #sample size 
-m1=c()
+p1=c()
 
 for (i in 1:nSim) {
   s=sample(x$Grade, n, replace = T)
-  m1[i]=mean(s)
+  p1[i]=mean(s)
   
 }
-length(m1)
+length(p1)
 
 
 hist(m1)
