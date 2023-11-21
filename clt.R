@@ -5,6 +5,7 @@ x=read.csv('grades1.csv')
 head(x)
 
 plot(density(x$MT))
+
 mean(x$MT)   #mu=85.7 true mean
 sd(x$MT)    #sigma = 14.1  true sd
 
@@ -52,4 +53,6 @@ hist(m1)
 abline(v=mean(x$Grade), col='red', lty=3, lwd=3)
 
 prop.table(table(x$Grade))
+
+
 
